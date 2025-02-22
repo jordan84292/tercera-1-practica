@@ -52,4 +52,44 @@ header{
 }.social i{
     color: red;
     margin-right: 10px;
+}.main-accordion-container{
+    width: 100%;
+    background-color: beige;
+}
+
+.accordion-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-top : 1px solid black;
+    flex-direction: column;
+}.accordion-item:hover{
+    transform: scale(1);
+    border-bottom: 1px solid black;
+}
+.accordion-tittle{
+    width: 100%;
+    height: 50px;
+    font: 18px bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordion-desc{
+    display: none;
+}
+.accordion-item .tab-active {
+    font-size: 30px;
+    pointer-events: visible;
+}
+.tab-active .accordion-desc{
+    background-color: indigo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    width: 100%;
 }
